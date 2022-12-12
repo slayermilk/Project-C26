@@ -14,7 +14,7 @@ class PlayerArrow {
   }
 
   remove(index) {
-    this.isRemoved = false;
+    this.isRemoved = true;
     Matter.World.remove(world, this.body);
     delete playerArrows[index];
   } 
